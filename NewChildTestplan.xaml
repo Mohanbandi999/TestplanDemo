@@ -1,0 +1,51 @@
+﻿<Window x:Class="TestplanDemo.NewChildTestplan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestplanDemo"
+        mc:Ignorable="d"
+        Title="NewChildTestplan" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ID"  Grid.Row="1" Grid.Column="0" FontSize="24">
+           ID
+        </TextBlock>
+        <TextBlock x:Name="TestplanName"  Grid.Row="2" Grid.Column="0" FontSize="24" Margin="0,20,0,0">
+           TestplanName
+        </TextBlock>
+        <TextBlock x:Name="Description"  Grid.Row="3" Grid.Column="0" FontSize="24" Margin="0,20,0,0">
+           Description
+        </TextBlock>
+        <TextBlock x:Name="Version"  Grid.Row="4" Grid.Column="0" FontSize="24" Margin="0,20,0,0">
+           Version
+        </TextBlock>
+        <TextBlock x:Name="Logo"  Grid.Row="5" Grid.Column="0" FontSize="24" Margin="0,20,0,0">
+           Logo
+        </TextBlock>
+        
+        
+        <TextBox x:Name="Idtext" Grid.Row="1" Grid.Column="2" Width="180" />
+        <TextBox x:Name="Nametext" Grid.Row="2" Grid.Column="2" Width="180" Margin="0,20,0,0"/>
+        <TextBox x:Name="Descriptiontext" Grid.Row="3" Grid.Column="2" Width="180" Margin="0,20,0,0"/>
+        <TextBox x:Name="Versiontext" Grid.Row="4" Grid.Column="2" Width="180" Margin="0,20,0,0"/>
+        <TextBox x:Name="Logotext" Grid.Row="5" Grid.Column="2" Width="140" Margin="0,20,20,0"/>
+        <Button x:Name="saveBtn" Content="Save" Grid.Row="6" Grid.Column="2" Margin="0,20,20,0" Click="SaveDetails"/>
+        <Button x:Name="UpdateBtn" Content="Update" Grid.Row="6" Grid.Column="3" Width="180" Margin="0,20,20,0" Click="UpdateBtn_Click"/>
+    </Grid>
+</Window>

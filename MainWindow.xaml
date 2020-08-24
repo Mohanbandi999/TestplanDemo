@@ -1,0 +1,44 @@
+﻿<Window x:Class="TestplanDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestplanDemo"
+        mc:Ignorable="d"
+        Title="Childtestplan" Height="450" Width="800" FontSize="24">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ID"  Grid.Row="1" Grid.Column="0" >
+           ID
+        </TextBlock>
+        <TextBlock x:Name="TestplanName"  Grid.Row="2" Grid.Column="0"  Margin="0,20,0,0">
+           TestplanName
+        </TextBlock>
+        <TextBlock x:Name="Description"  Grid.Row="3" Grid.Column="0"  Margin="0,20,0,0">
+           Description
+        </TextBlock>
+        <TextBlock x:Name="Version"  Grid.Row="4" Grid.Column="0"  Margin="0,20,0,0">
+           Version
+        </TextBlock>
+        <TextBox x:Name="id" Grid.Row="1" Grid.Column="2" Text="mohan" Width="180"  />
+        <TextBox x:Name="name" Grid.Row="2" Grid.Column="2" Width="180" Text="siva" Margin="0,20,0,0"/>
+        <TextBox x:Name="description" Grid.Row="3" Grid.Column="2" Width="180" Margin="0,20,0,0"/>
+        <TextBox x:Name="version" Grid.Row="4" Grid.Column="2" Width="180" Margin="0,20,0,0"/>
+
+        <Button x:Name="BtnUpdate" Content="Update" Grid.Row="5" Grid.Column="2" Margin="0,20,0,0" Click="UpdateTestplan" /> 
+
+    </Grid>
+</Window>
